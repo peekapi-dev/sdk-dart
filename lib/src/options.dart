@@ -36,6 +36,7 @@ class PeekApiOptions {
   /// Error handler callback.
   final void Function(Object error)? onError;
 
+  /// Creates a new configuration for the PeekAPI client.
   const PeekApiOptions({
     required this.apiKey,
     this.endpoint = 'https://ingest.peekapi.dev/v1/events',

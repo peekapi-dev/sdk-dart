@@ -1,15 +1,33 @@
 /// Represents a single API request event captured by PeekAPI.
 class RequestEvent {
+  /// HTTP method (e.g. GET, POST).
   String method;
+
+  /// Request path (e.g. /api/users).
   String path;
+
+  /// HTTP status code (e.g. 200, 404).
   int statusCode;
+
+  /// Response time in milliseconds.
   double responseTimeMs;
+
+  /// Request body size in bytes.
   int requestSize;
+
+  /// Response body size in bytes.
   int responseSize;
+
+  /// Consumer identifier (API key, hashed auth header, or custom).
   String? consumerId;
+
+  /// Arbitrary key-value metadata attached to the event.
   Map<String, dynamic>? metadata;
+
+  /// ISO 8601 timestamp (auto-set if null).
   String? timestamp;
 
+  /// Creates a new request event.
   RequestEvent({
     required this.method,
     required this.path,
@@ -22,6 +40,7 @@ class RequestEvent {
     this.timestamp,
   });
 
+  /// Serializes this event to a JSON-compatible map.
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{
       'method': method,
@@ -52,6 +71,7 @@ class RequestEvent {
     return map;
   }
 
+  /// Deserializes a request event from a JSON map.
   factory RequestEvent.fromJson(Map<String, dynamic> json) => RequestEvent(
         method: json['method'] as String? ?? '',
         path: json['path'] as String? ?? '',
