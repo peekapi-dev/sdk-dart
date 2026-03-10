@@ -115,6 +115,18 @@ All issues and feature requests are tracked in the [community repo](https://gith
 4. Check lint/format: `dart analyze && dart format --set-exit-if-changed .`
 5. Open a pull request
 
+## Support
+
+If you find PeekAPI useful, give this repo a star — it helps others discover the project.
+
+### Badge
+
+Show that your API is monitored by PeekAPI:
+
+```markdown
+[![Monitored by PeekAPI](https://img.shields.io/badge/monitored%20by-PeekAPI-06b6d4)](https://peekapi.dev)
+```
+
 ## License
 
 MIT
