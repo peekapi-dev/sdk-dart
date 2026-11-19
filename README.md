@@ -1,5 +1,7 @@
 # PeekAPI — Dart SDK
 
+> **PeekAPI has shut down.** The service closed in November 2026 and its ingest endpoint is offline, so this SDK can no longer deliver events. The package stays published for reference only; remove it from your project. See [peekapi.dev](https://peekapi.dev).
+
 [![pub.dev](https://img.shields.io/pub/v/peekapi)](https://pub.dev/packages/peekapi)
 [![License](https://img.shields.io/github/license/peekapi-dev/sdk-dart)](LICENSE)
 [![CI](https://github.com/peekapi-dev/sdk-dart/actions/workflows/ci.yml/badge.svg)](https://github.com/peekapi-dev/sdk-dart/actions/workflows/ci.yml)
